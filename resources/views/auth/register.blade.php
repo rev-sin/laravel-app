@@ -29,6 +29,15 @@
             @enderror
         </div>
         <div>
+            <label for="password_confirmation">Confirm Password</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+        </div>
+        <div>
+            @error('password_confirmation')
+                <div>{{ $message }}</div>
+            @enderror
+        </div>
+        <div>
             <button type="submit">Register</button>
         </div>
     </form>
